@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastrar História</title>
+    <link rel="stylesheet" href="cad_historia.css">
+</head>
+<body>
+    <div class="cadastro-moldura"> 
+        <div id="conteudo-moldura">
+            <label class="titulo-label" for="titulo">Cadastrar História</label><br>
+            <label class="titulo-turma" for="turma">Turma:</label><br>
+            <input type="text" id="turma" name="turma"><br><br>
+            <label class="titulo-titulo" for="titulo">Título:</label><br>
+            <input type="text" id="titulo" name="titulo"><br><br>
+            <div class="input-container">
+                <label class="titulo-historia" for="historia">História:</label><br>
+                <textarea id="historia" name="historia" oninput="contarCaracteres()" maxlength="3000"></textarea>
+                <br>
+                <span id="contador">0/3000 caracteres</span>
+            </div>
+            <br>    
+        </div>
+        <br>
+        <br>
+        <div id="cadastro-logo">
+            <div id="bt">
+                <button id="cadastrar">Cadastrar</button>
+            </div>
+            <div>
+                <img src="/logo senac/senac.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/9.4.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.4.0/firebase-database-compat.js"></script>
+    <script src="cad_historia.js"></script>
+</body>
+</html>
